@@ -20,5 +20,4 @@ RUN wget -q "https://docs.google.com/uc?id=${DSTM_GDRIVE_ID}&export=download" -O
     sha1sum -c zm.sha1 && \
     rm dstm.tar.gz zm.sha1
 
-ENTRYPOINT /opt/dstm/zm
-
+ENTRYPOINT [ "/opt/dstm/zm" ]
